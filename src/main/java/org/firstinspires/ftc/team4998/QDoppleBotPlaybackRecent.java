@@ -42,7 +42,7 @@ import java.io.File;
 
 import edu.berean.robotics.dopple.core.DoppleBotHistoryRecord;
 import edu.berean.robotics.dopple.util.DoppleBotHistoryHelper;
-import edu.berean.robotics.robots.team4998.HardwareQDoppleBot;
+import edu.berean.robotics.robots.team4998.HardwareQDoppleBot_OLD;
 
 @Autonomous(name = "QDoppleBot: Play recent", group = "QDoppleBot")
 @Disabled
@@ -57,7 +57,7 @@ public class QDoppleBotPlaybackRecent extends LinearOpMode {
     private static String ROBOT_HISTORY_DIRECTORY = "/ROBO_DATA/";
     private static String LOG_TAG = "QDOPPLEBOT PLAYBACK FILE - ";
 
-    HardwareQDoppleBot robot = new HardwareQDoppleBot();
+    HardwareQDoppleBot_OLD robot = new HardwareQDoppleBot_OLD();
 
 
     /**

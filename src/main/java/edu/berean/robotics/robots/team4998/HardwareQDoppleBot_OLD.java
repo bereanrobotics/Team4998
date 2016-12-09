@@ -19,7 +19,7 @@ import edu.berean.robotics.dopple.core.DoppleBot;
  * This class can be used to define all the specific hardware for a AimBot.
  *
  */
-public class HardwareQDoppleBot extends DoppleBot
+public class HardwareQDoppleBot_OLD extends DoppleBot
 {
 
     /* Public OpMode members. */
@@ -43,7 +43,7 @@ public class HardwareQDoppleBot extends DoppleBot
     private ElapsedTime period  = new ElapsedTime();
 
     /* Constructor */
-    public HardwareQDoppleBot(){
+    public HardwareQDoppleBot_OLD(){
 
     }
 

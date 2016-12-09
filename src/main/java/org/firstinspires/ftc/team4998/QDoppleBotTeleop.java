@@ -39,7 +39,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.RobotLog;
 
-import edu.berean.robotics.robots.team4998.HardwareQDoppleBot;
+import edu.berean.robotics.robots.team4998.HardwareQDoppleBot_OLD;
 
 /**
  * This file provides  Telop driving for Aimbot.
@@ -51,7 +51,7 @@ public class QDoppleBotTeleop extends OpMode{
 
     /* Declare OpMode members. */
 
-    HardwareQDoppleBot robot = new HardwareQDoppleBot(); // use the class created to define a Aimbot's hardware
+    HardwareQDoppleBot_OLD robot = new HardwareQDoppleBot_OLD(); // use the class created to define a Aimbot's hardware
     double qermyStartPos = 0.49019608;
     double qermyEndPos = 0.07843137;
     double qermyOffset = 0.49019608;
