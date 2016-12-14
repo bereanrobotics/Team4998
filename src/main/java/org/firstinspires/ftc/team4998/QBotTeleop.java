@@ -158,10 +158,10 @@ public class QBotTeleop extends OpMode{
         }
         else if (driverMode == "sideways")
         {
-            robot.front_right.setPower(right);
-            robot.back_right.setPower (-right);
-            robot.front_left.setPower (left);
-            robot.back_left.setPower (-left);
+            robot.front_right.setPower(-right*0.5);
+            robot.back_right.setPower (right);
+            robot.front_left.setPower (-left*0.5);
+            robot.back_left.setPower (left);
         }
         if (gamepad1.a){
             driverMode = "default";

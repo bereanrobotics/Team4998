@@ -115,7 +115,7 @@ public class HardwareQBot
         // save a reference to the core device interface to set LED lights
         cdi = hwMap.deviceInterfaceModule.get("cdi");
         initColorSensor("cs");
-        gyro = (ModernRoboticsI2cGyro) hwMap.gyroSensor.get("gyro");
+        //gyro = (ModernRoboticsI2cGyro) hwMap.gyroSensor.get("gyro");
         launchButton = hwMap.digitalChannel.get("launchButton");
         launchButton.setMode(DigitalChannelController.Mode.INPUT);
         // get a reference to our Light Sensor object.
