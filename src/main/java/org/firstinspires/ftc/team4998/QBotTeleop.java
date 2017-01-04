@@ -158,7 +158,7 @@ public class QBotTeleop extends OpMode{
         }
         else if (driverMode == "sideways")
         {
-            robot.front_right.setPower(-right*0.5);
+            robot.front_right. setPower(-right*0.5);
             robot.back_right.setPower (right);
             robot.front_left.setPower (-left*0.5);
             robot.back_left.setPower (left);
@@ -280,6 +280,7 @@ public class QBotTeleop extends OpMode{
         telemetry.addData("catapult", "catapult encoder: %d", robot.catapultMotor.getCurrentPosition());
         telemetry.addData("spinner", "right: %.2f", right);
         telemetry.addData("qermy", "%.2f", qermyOffset);
+        telemetry.addData("light", "%.2f", robot.lightSensor.getLightDetected());
         updateTelemetry(telemetry);
     }
 

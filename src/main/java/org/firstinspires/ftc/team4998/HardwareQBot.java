@@ -115,7 +115,7 @@ public class HardwareQBot
         // save a reference to the core device interface to set LED lights
         cdi = hwMap.deviceInterfaceModule.get("cdi");
         initColorSensor("cs");
-        //gyro = (ModernRoboticsI2cGyro) hwMap.gyroSensor.get("gyro");
+        gyro = (ModernRoboticsI2cGyro) hwMap.gyroSensor.get("gyro");
         launchButton = hwMap.digitalChannel.get("launchButton");
         launchButton.setMode(DigitalChannelController.Mode.INPUT);
         // get a reference to our Light Sensor object.
@@ -175,7 +175,7 @@ public class HardwareQBot
      * periodic tick.  This is used to compensate for varying processing times for each cycle.
      * The function looks at the elapsed cycle time, and sleeps for the remaining time interval.
      *
-     * @param periodMs  Length of wait cycle in mSec.
+     * @param periodMs  Length of wait cycle in mdSec.
      * @throws InterruptedException
      */
     public void waitForTick(long periodMs) throws InterruptedException {

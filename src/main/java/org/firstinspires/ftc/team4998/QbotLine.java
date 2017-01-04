@@ -64,9 +64,9 @@ import com.qualcomm.robotcore.util.ElapsedTime;
  * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list
  */
 
-@Autonomous(name="Qbot: Red/Left Autonomous", group="Qbot")
+@Autonomous(name="Qbot:Line", group="Qbot")
 //@Disabled
-public class QbotAutonomousRedLeft extends LinearOpMode {
+public class QbotLine extends LinearOpMode {
 
     /* Declare OpMode members. */
     private HardwareQBot robot   = new HardwareQBot();   // Use a qbot's hardware
@@ -275,6 +275,8 @@ public class QbotAutonomousRedLeft extends LinearOpMode {
 
         if (opModeIsActive()) {
 
+            driveToLine(DRIVE_SPEED,15);
+            /*
             sleep(10000);
             readyCatapult();
             launchCatapult();
@@ -284,7 +286,7 @@ public class QbotAutonomousRedLeft extends LinearOpMode {
             encoderDrive(.4, -7, -7, 10); // move forward 7 inches
             encoderDrive(.4, -16, 16, 10); // Rotate approx 90°, approx 5.68° for each inch turned
             encoderDrive(.4, 53, 53, 10);
-
+            */
 
             //encoderDrive(.4, -7.9, 7.9, 10); // Rotate approx 45°, approx 5.68° for each inch turned
             //shoot, this is old stuff
